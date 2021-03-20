@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>UDF programs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style type="text/css">
+      .text{
+    font-family: "Audiowide", sans-serif;
+    margin-right: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px silver;
+    } 
+    .div1{
+    height: 100%;
+    width: 94%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.19);
+    background-color: white;
+    } 
+      .div2{
+        width: 100%;
+        height: 300px;
+        background-color: lightgray;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        overflow: scroll;
+      }
+      .div2::-webkit-scrollbar{
+            display: none;
+      }
+      .div3{
+        width: 100%;
+        height: 700px;
+        background-color: lightgray;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        overflow: scroll;
+      }
+      .div3::-webkit-scrollbar{
+            display: none;
+        }
+        .div4{
+        width: 100%;
+        height: 200px;
+        background-color: whitesmoke;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        overflow: scroll;
+      }
+      .div4::-webkit-scrollbar{
+            display: none;
+        }
+        a{
+          text-decoration: none;
+          color: black;
+          font-family: arial black;
+        }
+        a:hover{
+          text-decoration: none;
+          background-color: lime;
+        }
+        .collapse a{
+         text-decoration: none;
+         background-color: unset;
+    }
+        .footer{
+    height: 60px;
+    width: 100%;
+    padding-top: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.3);
+    }
+.bg1{
+    background-image: url("https://images.assetsdelivery.com/compings_v2/yulicon/yulicon1801/yulicon180100022.jpg");
+    }
+.td1{
+    width: 20%;
+    }
+.td2{
+    width: 70%;
+    }
+li{
+    font-size: 15px;
+    font-family:Arial Black;
+    }
+h1{
+    color: maroon;
+    }
+h3{
+    font-family:Arial Black;
+    }
+.gmail{
+    font-size: 15px;
+    text-shadow: 3px 3px 3px silver;
+    color: navy;
+    font-family: arial black;
+    }
+    .img1{
+    width:50%;
+    box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.19);
+    border-radius: 10px;
+    transition: width 2s;
+    }
+ .img1:hover{
+    width:90%; 
+    }
+    </style>
+ </head>
+ <body class="bg1">
+ <nav class="navbar navbar-expand-lg navbar-light bg-success" style=" box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.3);">
+ 	<font class="text">Self Programmer</font>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Programs
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="sequential.html">Sequential Programs</a>
+          <a class="dropdown-item" href="condition.html">Decision Making Programs</a>
+          <a class="dropdown-item" href="looping.html">Looping Programs</a>
+          <a class="dropdown-item" href="udf.html">UDF Programs</a>
+      </li>
+      </ul>
+    <p class="form-inline my-2 my-lg-0 gmail">✉️:- selfprogrammer2021@gmail.com</p>
+  </div>
+</nav>
+<div class="container div1">
+<center>
+<h1><b><i>UDF Programs</i></b></h1>
+</center>
+<br>
+ <div class="row">
+ 	<div class="col">
+ 	<ul type="disc">
+ 		<li>User Define Functions are self-contained blocks of a statements which are written by the user to computer or perform a task. </li>
+    <li>Thay can be called by the main program repeatedly as per the requirement.</li>
+ 	</ul>
+  <br>
+  <center>
+  <img class="img1" src="https://splearnings.weebly.com/uploads/4/9/8/9/49897593/140330_orig.jpg">
+</center>
+ 	</div>
+ </div>
+  <hr>
+<center>
+<h1><b><i>Examples</i></b></h1>
+</center>
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="div2">
+        <h3>Definations</h3>
+        <p>Note :-Scroll and Click on Definition Which you want to learn</p>
+        <ol type="1">
+          <li><a href="#d1">Write a program to find out addition of two values using UDF.</a></li>
+          <li><a href="#d2">Write a program to find out factorial of number using UDF.</a></li>
+          <li><a href="#d3">Write a program to find out reverse of number using UDF.</a></li>
+          <li><a href="#d4">Write a program to find out Sum of digits using UDF.</a></li>
+          <li><a href="#d5">Write a program to find out Number is Palindrome or not using UDF.</a></li>
+          <li><a href="#d6">Write a program to find out Number is Armstrong or not using UDF.</a></li>
+          <li><a href="#d7">Write a program to find out Number is Prime or not using UDF.</a></li>
+          <li><a href="#d8"> Write a program to find out Fibonacci series up to user input using UDF.</a></li>
+          <li><a href="#d9">Write a program to find out area of rectangle using UDF.</a></li>
+          <li><a href="#d10">Write a program to find out area of circle using UDF</a></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <br>
+  <center>
+  <h1><i><b>Programms</b></i></h1>
+    </center>
+    <div class="row">
+    <div class="col">
+      <div class="div3">
+        <h3 id="d1">1.Write a program to find out addition of two values using UDF.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        float add(float a,float b);<br>
+        void main()<br>
+        {<br>
+           float x,y,z;<br>
+  clrscr();<br>
+
+  printf("\nEnter Value Of x:");<br>
+  scanf("%f",&x);<br><br>
+
+  printf("\nEnter Value Of y:");<br>
+  scanf("%f",&y);<br><br>
+  z=add(x,y);<br><br>
+  printf("\nAnswer=%.2f",z);<br>
+  getch();<br>
+}<br>
+float add(float a,float b)<br>
+{<br>
+   float z;<br>
+   z=a+b;<br>
+   return(z);<br>
+}
+         
+        <br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>
+        Enter Value of x:5<br><br>
+        Enter Value of y:3<br><br>
+        Answer=8.00<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d2">2.Write a program to find out factorial of number using UDF.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        int fact(int a);<br>
+        void main()<br>
+        {<br>
+           int x,z;<br>
+  clrscr();<br>
+
+  printf("\nEnter any Number:");<br>
+  scanf("%d",&x);<br><br>
+  z=fact(x);<br><br>
+  printf("\nFactorial Of a Number is:%d",z);<br>
+  getch();<br>
+}<br>
+int fact(int a)<br>
+{<br>
+  int f=1,i=1;<br>
+  while(i<=a)<br>
+  {<br>
+   f=f*i;<br>
+   i++;<br>
+  }<br>
+  return(f);<br>
+}
+
+        
+        <br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>
+        Enter any Number:3<br><br>
+        Factorial Of a Number is:6<br><br> 
+        </div>
+        </p>
+        <hr>
+        <h3 id="d3">3.Write a program to find out reverse of number using UDF.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        int reverse(int a);<br>
+        void main()<br>
+        {<br>
+         int x,y;<br>
+  clrscr();<br>
+
+  printf("\nEnter any Number:");<br>
+  scanf("%d",&x);<br><br>
+  y=reverse(x);<br><br>
+  printf("\nReverse Number is:%d",y);<br>
+  getch();<br>
+}<br>
+int reverse(int a)<br>
+{<br>
+   int b=0;<br>
+   while(a!=0)<br>
+    {<br>
+      b=b*10;<br>
+      b=b+a%10;<br>
+      a=a/10;<br>
+    }<br>
+    return(b);<br>
+}
+          
+        <br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>
+      Enter any Number:567<br><br>
+      Reverse Number is:765<br><br>  
+        </div>
+        </p>
+        <hr>
+        <h3 id="d4">4.Write a program to find out Sum of digits using UDF.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        int sumofdigits(int a);<br>
+        void main()<br>
+        {<br>
+          int x;<br>
+  clrscr();<br>
+
+  printf("\nEnter any Number:");<br>
+  scanf("%d",&x);<br><br>
+
+  printf("\nAnswer is:%d",sumofdigits(x));<br>
+  getch();<br>
+}<br>
+int sumofdigits(int a)<br>
+{<br>
+  int n,sum=0;<br>
+  while(a>0)<br>
+  {<br>
+    n=a%10;<br>
+    sum=sum+n;<br>
+    a=a/10;<br>
+  }<br>
+  return(sum);<br>
+}
+          
+        <br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>
+        Enter any Number:35<br><br>
+        Answer is:8<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d5">5.Write a program to find out Number is Palindrome or not using UDF.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        int palindrome(int n);<br>
+        void main()<br>
+        {<br>
+          int x;<br>
+   clrscr();<br>
+
+   printf("\nEnter any Number:");<br>
+   scanf("%d",&x);<br><br>
+
+   palindrome(x);<br>
+   getch();<br>
+}<br>
+int palindrome(int n)<br>
+{<br>
+   int a,sum=0,b;<br>
+   b=n;<br>
+   while(n>0)<br>
+   {<br>
+     a=n%10;<br>
+     sum=sum*10+a;<br>
+     n=n/10;<br>
+   }<br>
+   if(b==sum)<br>
+   {<br>
+    printf("\nNumber is Palindrome");<br>
+   }<br>
+   else<br>
+   {<br>
+    printf("\nNumber is not Palindrome");<br>
+   }<br>
+} 
+          
+        <br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>
+      Enter any Number:56<br><br>
+      Number is not Palindrome<br><br>
+        
+        </div>
+        </p>
+        <hr>
+        <h3 id="d6">6.Write a program to find out Number is Armstrong or not using UDF.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        int armstrong(int n);<br>
+        void main()<br>
+        {<br>
+          int x;<br>
+  clrscr();<br>
+
+  printf("\nEnter any Number:");<br>
+  scanf("%d",&x);<br><br>
+
+  armstrong(x);<br>
+
+  getch();<br>
+}<br>
+int armstrong(int n)<br>
+{<br>
+    int a,sum=0,b;<br>
+    b=n;<br>
+    while(n>0)<br>
+    {<br>
+      a=n%10;<br>
+      sum=sum+a*a*a;<br>
+      n=n/10;<br>
+    }<br>
+    if(b==sum)<br>
+    {<br>
+      printf("\nInput Number is Armstrong");<br>
+    }<br>
+    else<br>
+    {<br>
+      printf("\nInput Number is Not Armstrong");<br>
+    }<br>
+}
+          
+        <br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>
+      Enter any Number:153<br><br>
+       Input Number is Armstrong<br><br> 
+        </div>
+        </p>
+        <hr>
+        <h3 id="d7">7.Write a program to find out Number is Prime or not using UDF.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        int prime(int n);<br>
+        void main()<br>
+        {<br>
+         int x;<br>
+  clrscr();<br>
+
+  printf("\nEnter any Number:");<br>
+  scanf("%d",&x);<br><br>
+
+  prime(x);<br>
+  getch();<br>
+}<br>
+int prime(int n)<br>
+{<br>
+  int i,f=0;<br>
+  for(i=1;i<=n;i++)<br>
+  {<br>
+   if(n%i==0)<br>
+   {<br>
+    f++;<br>
+   }<br>
+  }<br>
+  if(f==2)<br>
+  {<br>
+    printf("\nNumber is Prime");<br>
+  }<br>
+  else<br>
+  {<br>
+    printf("\nNumber is not Prime");<br>
+  }<br>
+} 
+          
+        <br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>
+      Enter any Number:3<br><br>
+      Number is Prime<br><br>  
+        </div>
+        </p>
+        <hr>
+        <h3 id="d8">8.Write a program to find out Fibonacci series up to user input using UDF.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void fibonacci();<br>
+        void main()<br>
+        {<br>
+          clrscr();<br>
+   fibonacci();<br>
+   getch();<br>
+}<br>
+void fibonacci()<br>
+{<br>
+   int n1=0,n2=1,n3,i,number;<br>
+   printf("\nEnter the number of elements:");<br>
+   scanf("%d",&number);<br>
+   printf("\n%d  %d ",n1,n2);<br>
+   for(i=2;i < number;i++)<br>
+   {<br>
+     n3=n1+n2;<br>
+     printf(" %d ",n3);<br>
+     n1=n2;<br>
+     n2=n3;<br>
+   }<br>
+}
+          
+        <br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>
+        Enter the number of elements:5<br><br>
+        0  1  1  2  3<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d9">9.Write a program to find out area of rectangle using UDF.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        float areaofrec(float x,float y);<br>
+
+        void main()<br>
+        {<br>
+           float l,b;<br>
+  clrscr();<br>
+  printf("\nEnter value of l:");<br>
+  scanf("%f",&l);<br><br>
+
+  printf("\nEnter value of b:");<br>
+  scanf("%f",&b);<br><br>
+
+  printf("\nArea of Rectangle:%.2f", areaofrec(l,b));<br>
+  getch();<br>
+}<br>
+float areaofrec(float x,float y)<br>
+{<br>
+  float z;<br>
+  z=x*y;<br>
+  return(z);<br>
+}
+          
+        <br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>
+      Enter value of l:5<br><br>
+      Enter value of b:6<br><br>
+      Area of Rectangle:30.00<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d10">10.Write a program to find out area of circle using UDF</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        float areaofcir(float a);<br>
+        void main()<br>
+        {<br>
+         float r;<br>
+  clrscr();<br>
+
+  printf("\nEnter Value of r:");<br>
+  scanf("%f",&r);<br><br>
+  printf("\nArea of Circle=%.2f",areaofcir(r));<br>
+  getch();<br>
+}<br>
+float areaofcir(float a)<br>
+{<br>
+   float b;<br>
+   b=3.14*a*a;<br>
+   return(b);<br>
+}
+          
+        <br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>
+        Enter Value of r:5<br><br>
+        Area of Circle=78.50<br><br>
+        </div>
+        </p>
+        <hr>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid bg-dark gray footer">
+	&copy; Copyright 2021. All Rights Reserved by Self Programming.
+</div>
+</body>
+ </html>

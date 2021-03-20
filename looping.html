@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>lopping programs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style type="text/css">
+      .text{
+    font-family: "Audiowide", sans-serif;
+    margin-right: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px silver;
+    } 
+    .div1{
+    height: 100%;
+    width: 94%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.19);
+    background-color: white;
+    } 
+      .div2{
+        width: 100%;
+        height: 300px;
+        background-color: lightgray;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        overflow: scroll;
+      }
+      .div2::-webkit-scrollbar{
+            display: none;
+      }
+      .div3{
+        width: 100%;
+        height: 700px;
+        background-color: lightgray;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        overflow: scroll;
+      }
+      .div3::-webkit-scrollbar{
+            display: none;
+        }
+        .div4{
+        width: 100%;
+        height: 200px;
+        background-color: whitesmoke;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        overflow: scroll;
+      }
+      .div4::-webkit-scrollbar{
+            display: none;
+        }
+        a{
+          text-decoration: none;
+          color: black;
+          font-family: arial black;
+        }
+        a:hover{
+          text-decoration: none;
+          background-color: lime;
+        }
+        .collapse a{
+         text-decoration: none;
+         background-color: unset;
+    }
+        .footer{
+    height: 60px;
+    width: 100%;
+    padding-top: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.3);
+    }
+.bg1{
+    background-image: url("https://images.assetsdelivery.com/compings_v2/yulicon/yulicon1801/yulicon180100022.jpg");
+    }
+.td1{
+    width: 20%;
+    }
+.td2{
+    width: 70%;
+    }
+li{
+    font-size: 15px;
+    font-family:Arial Black;
+    }
+h1{
+    color: maroon;
+    }
+h3{
+    font-family:Arial Black;
+    }
+    h4{  
+    font-family:Arial Black;
+    color:navy;
+  }
+  .img1{
+    width:50%;
+    box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.19);
+    border-radius: 10px;
+    transition: width 2s;
+    }
+ .img1:hover{
+    width:100%; 
+    }
+.gmail{
+    font-size: 15px;
+    text-shadow: 3px 3px 3px silver;
+    color: navy;
+    font-family: arial black;
+    }
+    </style>
+ </head>
+ <body class="bg1">
+ <nav class="navbar navbar-expand-lg navbar-light bg-success" style=" box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.3);">
+ 	<font class="text">Self Programmer</font>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Programs
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="sequential.html">Sequential Programs</a>
+          <a class="dropdown-item" href="condition.html">Decision Making Programs</a>
+          <a class="dropdown-item" href="looping.html">Looping Programs</a>
+          <a class="dropdown-item" href="udf.html">UDF Programs</a>
+      </li>
+      </ul>
+   <p class="form-inline my-2 my-lg-0 gmail">✉️:- selfprogrammer2021@gmail.com</p>
+  </div>
+</nav>
+<div class="container div1">
+<center>
+<h1><b><i>Looping Programs</i></b></h1>
+</center>
+<br>
+ <div class="row">
+ 	<div class="col">
+ 		<h4>looping programs are used to repeat the
+execution of a list of statements, depending on the
+value of an integer expression. </h4>
+  <br><hr>
+<h4>We can write looping program using three type of loop.</h4>
+<ol type="1">
+  <li>While loop.</li>
+  <li>For loop.</li>
+  <li>Do while loop.</li>
+</ol>
+<br>
+<hr>
+<h4>1.While loop</h4>
+<ul type="disc">
+  <li>The while loop is used to repeat one or more
+statements while a particular condition is true.</li>
+  <li>While loop is also entry controlled loop or pre
+test loop.In the while loop, the condition is tested before
+any of the statements in the statement block is
+executed.</li>
+<li>If the condition is true, only then the statements
+will be executed otherwise the control will jump
+to the immediate statement outside the while
+loop block.</li>
+<li>At last it will update counter variable by
+incrementing or decrementing</li>
+</ul>
+<center>
+  <img class="img1" src="https://i.ibb.co/N995PmR/Img1.png">
+</center>
+<br><hr>
+<h4>2.For loop</h4>
+<ul type="disc">
+  <li>For loop is used to repeat a task until a particular
+condition is true.</li>
+  <li>The for loop allows us to specify three things about a
+loop in a single line.
+<br><br><ol type="a">
+  <font color="red">
+  <li>Setting a loop counter to an initial value.</li>
+  <li>Test Exp : Check the condition whether counter
+variable is reached at the desired value.</li>
+<li>Increment or Decrement counter variable.</li>
+</ol>
+</font><br><br>
+</li>
+<li>• In the for loop, first it is assigning value of variable
+then the condition is tested before any of the
+statements in the statement block is executed.
+</li>
+<li>If the condition is true, only then the statements
+will be executed otherwise the control will jump to
+the immediate statement outside the for loop
+block.</li>
+<li>At last it move to the increment/decrement
+portion and according to logic it will update the
+counter variable.</li>
+</ul>
+<center>
+  <img class="img1" src="https://i.ibb.co/6rL6tWc/Img1.png">
+</center>
+<br><hr>
+<h4>3.Do while loop</h4>
+<ul type="disc">
+  <li>The do-while loop is similar to the while loop. The
+only difference is that in a do-while loop, the test
+condition is tested at the end of the loop</li>
+  <li>Since the body of the loop is executed first and
+then the loop condition is checked in do while
+loop so it executes its statement at least once.
+if condition becomes true then repeat same
+process again otherwise terminate the loop
+process. That’s why do while loop is called an
+exit controlled loop.</li>
+<li>One important point is that , in case of for loop and
+while loop are not allowed ; (semicolon ) at the end
+of loop statement but in case of do while loop it is
+required to write ; (semicolon) symbol at the end of
+condition.</li>
+<li>The major disadvantage of using a do while loop is
+that it always executes at least once, so even if the
+user enters some invalid data, the loop will execute.</li>
+</ul>
+<center>
+  <img class="img1" src="https://i.ibb.co/4RYcTW0/Img1.png">
+</center>
+<br>
+ 	</div>
+ </div>
+ <hr>
+<center>
+<h1><b><i>Examples</i></b></h1>
+</center>
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="div2">
+        <h3>Definations</h3>
+        <p>Note :-Scroll and Click on Definition Which you want to learn</p>
+        <ol type="1">
+          <li><a href="#d1">Write a program that Print 1 2 3 4 …… 10</a></li>
+          <li><a href="#d2">Write a program that Print 2 4 6 ……. 20</a></li>
+          <li><a href="#d3">Write a program that Print 1 3 5 7 …… N</a></li>
+          <li><a href="#d4">Write a program that Print 100 99 98…… 90</a></li>
+          <li><a href="#d5">Write a program that Print 200 198 196 …. 180</a></li>
+          <li><a href="#d6">Write a program that Print 1 10 2 9 3 8 4 7 5 6 6 5 7 4 8 3 9 2 10 1</a></li>
+          <li><a href="#d7">Write a program to print multiplication table of inputted number.</a></li>
+          <li><a href="#d8">Write a program to print 0 1 1 2 3 5 8 13…..n</a></li>
+          <li><a href="#d9">Print first 10 natural number with its square and cube.</a></li>
+          <li><a href="#d10">Accept 10 numbers from user one by one and displays its total value on screen.</a></li>
+          <li><a href="#d11">Input x and y calculate its power value</a></li>
+          <li><a href="#d12">Write a program that input number and find out sum of digits.</a></li>
+          <li><a href="#d13">Write a program that input number and find out reverse of that number</a></li>
+          <li><a href="#d14">Write a program that input number and find out number is palindrome or
+not</a></li>
+          <li><a href="#d15">Write a program that input number and find out number is Armstrong or
+not</a></li>
+          <li><a href="#d16">Write a program that input number and find out number is Prime or not.
+</a></li>
+          <li><a href="#d17">Write a program to find out prime numbers up to user series.</a></li>
+          <li><a href="#d18">Write a program to find out Armstrong numbers up to user series.
+</a></li>
+          <li><a href="#d19">Write a program that input number and find out factorial of given number.</a></li><hr>
+          <center><h4>Pyramid Programms</h4></center><hr>
+          <li><a href="#dp1">(Pyramid-A) : Write a C Program  to displays Pyramid.
+</a><br>1<br>1 2<br>1 2 3<br>1 2 3 4<br>1 2 3 4 5<br></li>
+
+          <li><a href="#dp2">(Pyramid-B) : Write a C Program  to displays Pyramid.
+</a><br>1<br>2 2<br>3 3 3<br>4 4 4 4<br>5 5 5 5 5<br></li>
+
+          <li><a href="#dp3">(Pyramid-C) : Write a C Program  to displays Pyramid.
+</a><br>1<br>1 0<br>1 0 1<br>1 0 1 0<br>1 0 1 0 1<br></li>
+
+          <li><a href="#dp4">(Pyramid-D) : Write a C Program  to displays Pyramid.
+</a><br>1<br>0 0<br>1 1 1<br>0 0 0 0<br>1 1 1 1 1<br></li>
+
+          <li><a href="#dp5">(Pyramid-E) : Write a C Program  to displays Pyramid.
+</a><br>1<br>2 3<br>4 5 6<br>7 8 9 10<br>11 12 13 14 15<br></li>
+
+          <li><a href="#dp6">(Pyramid-F) : Write a C Program  to displays Pyramid.
+</a><br>5<br>5 4<br>5 4 3<br>5 4 3 2<br>5 4 3 2 1<br></li>
+
+          <li><a href="#dp7">(Pyramid-G) : Write a C Program  to displays Pyramid.
+</a><br>1 2 3 4 5<br>1 2 3 4<br>1 2 3<br>1 2<br>1<br></li>
+
+          <li><a href="#dp8">(Pyramid-H) : Write a C Program  to displays Pyramid.
+</a><br>1 2 3 4 5<br>2 3 4 5<br>3 4 5<br>4 5<br>5<br></li>
+
+          <li><a href="#dp9">(Pyramid-I) : Write a C Program  to displays Pyramid.
+</a><br><span style="margin-left:12px;">1</span><br><span style="margin-left: 6px;">1  2</span><br>1  2  3<br></li>
+
+          <li><a href="#dp10">(Pyramid-J) : Write a C Program  to displays Pyramid.
+</a><br>1 2 3<br><span style="margin-left: 6px;">1 2</span><br><span style="margin-left: 12px;">1</span><br></li>
+
+          <li><a href="#dp11">(Pyramid-K) : Write a C Program  to displays Pyramid.
+</a><br><span style="margin-left:30px;">1</span><br><span style="margin-left: 15px;">2  1  2</span><br>3  2  1  2  3<br></li>
+
+          <li><a href="#dp12">(Pyramid-L) : Write a C Program  to displays Pyramid.
+</a><br><span style="margin-left:30px;">1</span><br><span style="margin-left: 15px;">1  2  1</span><br>1  2  3  2  1<br><span style="margin-left: 15px;">
+1  2  1</span><br><span style="margin-left: 30px;">1</span><br></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  <br>
+  <center>
+  <h1><i><b>Programms</b></i></h1>
+    </center>
+  <div class="row">
+    <div class="col">
+      <div class="div3">
+        <h3 id="d1">1.Write a program that Print 1 2 3 4 …… 10</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i=1;<br>
+  clrscr();<br>
+
+  while(i<=10)<br>
+  {<br>
+    printf(" %d ",i);<br>
+    i++;<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>
+        1  2  3  4  5  6  7  8  9  10<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d2">2.Write a program that Print 2 4 6 ……. 20</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i=2;<br>
+   clrscr();<br>
+
+   while(i<=20)<br>
+   {<br>
+      printf(" %d ",i);<br>
+      i=i+2;<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+        <br>
+        2  4  6  8  10  12  14  16  18  20<br><br> 
+        </div>
+        </p>
+        <hr>
+        <h3 id="d3">3.Write a program that Print 1 3 5 7 …… N</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i=1,n;<br>
+  clrscr();<br>
+
+  printf("\nEnter your last Digit:");<br>
+  scanf("%d",&n);<br><br>
+
+  while(i<=n)<br>
+  {<br>
+     printf(" %d ",i);<br>
+     i=i+2;<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>
+        Enter your last Digit:9<br><br>
+        1  3  5  7  9
+        </div>
+        </p>
+        <hr>
+        <h3 id="d4">4.Write a program that Print 100 99 98…… 90</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+         int i=100;<br>
+  clrscr();<br>
+
+  while(i>=90)<br>
+  {<br>
+    printf(" %d ",i);<br>
+    i--;<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>
+        100  99  98  97  96  95  94  93  92  91  90<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d5">5.Write a program that Print 200 198 196 …. 180</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+           int i=200;<br>
+   clrscr();<br>
+
+   while(i>=180)<br>
+   {<br>
+     printf(" %d ",i);<br>
+     i=i-2;<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>
+        200  198  196  194  192  190  188  186  184  182  180<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d6">6.Write a program that Print 1 10 2 9 3 8 4 7 5 6 6 5 7 4 8 3 9 2 10 1</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+           int i=1,j=10;<br>
+  clrscr();<br>
+
+  while(i<=10)<br>
+  {<br>
+     printf(" %d %d ",i,j);<br>
+     i++;<br>
+     j--;<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>
+        1  10  2  9  3  8  4  7  5  6  6  5  7  4  8  3  9  2  10  1<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d7">7.Write a program to print multiplication table of inputted number.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i=1,n;<br>
+  clrscr();<br>
+
+  printf("\nEnter any Number:");<br>
+  scanf("%d",&n);<br><br>
+
+  while(i<=10)<br>
+  {<br>
+     printf("\n%d * %d = %d",n,i,n*i);<br>
+     i++;<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>
+        2 * 1 = 2<br>
+        2 * 2 = 4<br>
+        2 * 3 = 6<br>
+        2 * 4 = 8<br>
+        2 * 5 = 10<br>
+        2 * 6 = 12<br>
+        2 * 7 = 14<br>
+        2 * 8 = 16<br>
+        2 * 9 = 18<br>
+        2 * 10 = 20<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d8">8.Write a program to print 0 1 1 2 3 5 8 13…..n</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+           int i,j=0,k=1,n;<br>
+   clrscr();<br>
+
+   printf("\nEnter any Number:");<br>
+   scanf("%d",&n);<br><br>
+
+   if(n > 0)<br>
+   {<br>
+   i=j+k;<br>
+   printf("%d %d %d",j,k,i);<br><br>
+
+   while(i < n)<br>
+   {<br>
+  j=k;<br>
+  k=i;<br>
+  i=j+k;<br><br>
+
+  if(i<=n)<br>
+  {<br>
+    printf(" %d ",i);<br>
+  }<br>
+   }<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>
+        Enter any Number:13<br><br>
+        0  1  1  2  3  5  8  13<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d9">9.Print first 10 natural number with its square and cube.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+           int i=1;<br>
+  clrscr();<br>
+
+  while(i<=10)<br>
+  {<br>
+      printf("\nNumber=%d Square=%d Cube=%d",i,i*i,i*i*i);<br>
+      i++;<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+        <br>
+       Number=1  Square=1  Cube=1<br>
+       Number=2  Square=4  Cube=8<br> 
+       Number=3  Square=9  Cube=27<br> 
+       Number=4  Square=16  Cube=64<br> 
+        Number=5  Square=25  Cube=125<br> 
+         Number=6  Square=36  Cube=216<br> 
+          Number=7  Square=49  Cube=343<br> 
+           Number=8  Square=64  Cube=512<br> 
+            Number=9  Square=81  Cube=729<br>
+             Number=10  Square=100  Cube=1000<br><br>  
+        </div>
+        </p>
+        <hr>
+        <h3 id="d10">10.Accept 10 numbers from user one by one and displays its total value on screen.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+           int i,sum=0,n;<br>
+  clrscr();<br>
+
+  for(i=1;i<=10;i++)<br>
+  {<br>
+  printf("\nInput Value %d:",i);<br>
+  scanf("%d",&n);<br>
+  sum=sum+n;<br>
+  }<br>
+  printf("\nTotal of all Input Values:%d",sum);<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>
+        Input Value 1 : 10<br><br>
+        Input Value 2 : 10<br><br>
+        Input Value 3 : 10<br><br>
+        Input Value 4 : 10<br><br>
+        Input Value 5 : 101<br><br>
+        Input Value 6 : 1<br><br>
+        Input Value 7 : 10<br><br>
+        Input Value 8 : 10<br><br>
+        Input Value 9 : 10<br><br>
+        Input Value 10 : 10<br><br>
+        Total of all Input Values : 182
+        </div>
+        </p>
+        <hr>
+        <h3 id="d11">11.Input x and y calculate its power value</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+           int i=1,x,k=1,y;<br>
+    clrscr();<br>
+
+    printf("\nEnter your Number:");<br>
+    scanf("%d",&x);<br><br>
+
+    printf("\nEnter Power of a Number:");<br>
+    scanf("%d",&y);<br><br>
+
+    while(i<=y)<br>
+    {<br>
+
+       k=k*x;<br>
+       i++;<br>
+    }<br>
+    printf("\nAnswer=%d",k);<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+        <br>
+        Enter your Number:<br><br>
+        Enter Power of a Number:<br><br>
+        Answer=625
+        </div>
+        </p>
+        <hr>
+        <h3 id="d12">12.Write a program that input number and find out sum of digits.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int a,sum=0,n;<br>
+   clrscr();<br>
+
+   printf("\nEnter any number:");<br>
+   scanf("%d",&a);<br><br>
+
+   while(a>0)<br>
+   {<br>
+    n=a%10;<br>
+    sum=sum+n;<br>
+    a=a/10;<br>
+   }<br>
+   printf("Sum of all digits:%d",sum);<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+        <br>
+        Enter any number:32<br><br>
+        Sum of all digits:5<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d13">13.Write a program that input number and find out reverse of that number</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int a,b=0;<br>
+    clrscr();<br>
+
+    printf("\nEnter any Number:");<br>
+    scanf("%d",&a);<br><br>
+
+    while(a!=0)<br>
+    {<br>
+      b=b*10;<br>
+      b=b+a%10;<br>
+      a=a/10;<br>
+    }<br>
+    printf("\nReverse Number:%d",b);<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+        <br>
+        Enter any Number:52<br><br>
+        Reverse Number:25<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d14">14.Write a program that input number and find out number is palindrome or not</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+           int n,a,sum=0,b;<br>
+   clrscr();<br>
+
+   printf("\nEnter any Number:");<br>
+   scanf("%d",&n);<br><br>
+
+   b=n;<br><br>
+
+   while(n>0)<br>
+   {<br>
+     a=n%10;<br>
+     sum=sum*10+a;<br>
+     n=n/10;<br>
+   }<br>
+   if(b==sum)<br>
+   {<br>
+     printf("\nInput number is a Palindrome number");<br>
+   }<br>
+   else<br>
+   {<br>
+     printf("\nInput number is not a Palindrome number");<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+        <br>
+        Enter any Number:121<br><br>
+        Input number is a Palindrome number<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d15">15.Write a program that input number and find out number is Armstrong or not</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int n,a,sum=0,b;<br>
+   clrscr();<br>
+
+   printf("\nEnter any Number:");<br>
+   scanf("%d",&n);<br><br>
+
+   b=n;<br><br>
+
+   while(n>0)<br>
+   {<br>
+     a=n%10;<br>
+     sum=sum+a*a*a;<br>
+     n=n/10;<br>
+   }<br>
+   if(b==sum)<br>
+   {<br>
+     printf("\nInput number is Armstrong number");<br>
+   }<br>
+   else<br>
+   {<br>
+     printf("\nInput number is not Armstrong number");<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+        <br>
+        Enter any Number:153<br><br>
+        Input number is Armstrong number<br><br>
+        </div>
+        </p>
+        <hr>
+        <h3 id="d16">16.Write a program that input number and find out number is Prime or not.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int n,i,f=0;<br>
+  clrscr();<br>
+
+  printf("\nEnter any Number:");<br>
+  scanf("%d",&n);<br><br>
+
+  for(i=1;i<=n;i++)<br>
+  {<br>
+    if(n%i==0)<br>
+    {<br>
+    f++;<br>
+    }<br>
+  }<br>
+  if(f==2)<br>
+  {<br>
+   printf("\n %d is Prime Number",n);<br>
+  }<br>
+  else<br>
+  {<br>
+   printf("\n %d is not Prime Number",n);<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+        <br>
+        Enter any Number:2<br><br>
+        2 is Prime Number<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="d17">17.Write a program to find out prime numbers up to user series.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j,n;<br>
+   clrscr();<br>
+
+   printf("\nEnter any Number:");<br>
+   scanf("%d",&n);<br><br>
+   printf("\nPrime Number:");<br>
+   for(i=2;i<=n;i++)<br>
+   {<br>
+     int c=0;<br>
+     for(j=1;j<=i;j++)<br>
+     {<br>
+       if(i%j==0)<br>
+       {<br>
+  c++;<br>
+       }<br>
+     }<br>
+     if(c==2)<br>
+     {<br>
+     printf(" %d ",i);<br>
+     }<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>
+        Enter any Number:10<br><br>
+        Prime Number:2  3  5  7<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="d18">18.Write a program to find out Armstrong numbers up to user series.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+           int n,r,sum,temp,end;<br>
+  clrscr();<br>
+
+  printf("\nEnter range of Number:");<br>
+  scanf("%d",&end);<br><br>
+
+  printf("\nArmstrong Numbers:");<br>
+  for(n=0;n<=end;n++)<br><br>
+  {<br>
+     temp=n;<br>
+     sum=0;<br>
+
+     while(temp!=0)<br>
+     {<br>
+     r=temp%10;<br>
+     temp=temp/10;<br>
+     sum=sum+(r*r*r);<br>
+     }<br>
+     if(sum==n)<br>
+     {<br>
+     printf(" %d ",n);<br>
+     }<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+        <br>
+        Enter range of Number:1000<br><br>
+        Armstrong Numbers:0 1 153 370 371 407<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="d19">19.Write a program that input number and find out factorial of given number.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int n,fact=1,i=1;<br>
+   clrscr();<br>
+
+   printf("\nEnter any Number:");<br>
+   scanf("%d",&n);<br><br>
+
+   while(i<=n)<br>
+   {<br>
+     fact=fact*i;<br>
+     i++;<br>
+   }<br>
+   printf("\nFactorial:%d",fact);<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>
+        Enter any Number:5<br><br>
+        Factorial:120<br><br>
+          </div>
+        </p>
+        <hr>
+        <center><h4>Pyramid Programs</h4></center>
+        <hr>
+        <h3 id="dp1">20.(Pyramid-A) : Write a C Program to displays Pyramid.<br><br>1<br>1 2<br>1 2 3<br>1 2 3 4<br>1 2 3 4 5<br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j;<br>
+   clrscr();<br>
+
+   for(i=1;i<=5;i++)<br>
+   {<br>
+     for(j=1;j<=i;j++)<br>
+     {<br>
+     printf(" %d ",j);<br>
+     }<br>
+     printf("\n");<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+       <br>1<br>1 2<br>1 2 3<br>1 2 3 4<br>1 2 3 4 5<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp2">21.(Pyramid-B) : Write a C Program to displays Pyramid.<br><br>1<br>2 2<br>3 3 3<br>4 4 4 4<br>5 5 5 5 5<br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+           int i,j;<br>
+   clrscr();<br>
+
+   for(i=1;i<=5;i++)<br>
+   {<br>
+    for(j=1;j<=i;j++)<br>
+    {<br>
+     printf(" %d ",i);<br>
+    }<br>
+    printf("\n");<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      
+        <br>1<br>2 2<br>3 3 3<br>4 4 4 4<br>5 5 5 5 5<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp3">22.(Pyramid-C) : Write a C Program to displays Pyramid.<br><br>1<br>1 0<br>1 0 1<br>1 0 1 0<br>1 0 1 0 1<br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j;<br>
+   clrscr();<br>
+
+   for(i=1;i<=5;i++)<br>
+   {<br>
+     for(j=1;j<=i;j++)<br>
+     {<br>
+  printf(" %d ",j%2);<br>
+     }<br>
+     printf("\n");<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>1<br>1 0<br>1 0 1<br>1 0 1 0<br>1 0 1 0 1<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp4">23.(Pyramid-D) : Write a C Program to displays Pyramid.<br><br>1<br>0 0<br>1 1 1<br>0 0 0 0<br>1 1 1 1 1<br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j;<br>
+   clrscr();<br>
+
+   for(i=1;i<=5;i++)<br>
+   {<br>
+     for(j=1;j<=i;j++)<br>
+     {<br>
+  printf(" %d ",i%2);<br>
+     }<br>
+     printf("\n");<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>1<br>0 0<br>1 1 1<br>0 0 0 0<br>1 1 1 1 1<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp5">24.(Pyramid-E) : Write a C Program to displays Pyramid.<br><br>1<br>2 3<br>4 5 6<br>7 8 9 10<br>11 12 13 14 15<br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j,c=1;<br>
+    clrscr();<br>
+
+    for(i=1;i<=5;i++)<br>
+    {<br>
+     for(j=1;j<=i;j++)<br>
+     {<br>
+      printf(" %d ",c++);<br>
+     }<br>
+     printf("\n");<br>
+    }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>1<br>2 3<br>4 5 6<br>7 8 9 10<br>11 12 13 14 15<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp6">25.(Pyramid-F) : Write a C Program to displays Pyramid.<br><br>5<br>5 4<br>5 4 3<br>5 4 3 2<br>5 4 3 2 1<br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j;<br>
+   clrscr();<br>
+
+   for(i=5;i>=1;i--)<br>
+   {<br>
+     for(j=5;j>=i;j--)<br>
+     {<br>
+     printf(" %d ",j);<br>
+     }<br>
+     printf("\n");<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>5<br>5 4<br>5 4 3<br>5 4 3 2<br>5 4 3 2 1<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp7">26.(Pyramid-G) : Write a C Program to displays Pyramid.<br><br>1 2 3 4 5<br>1 2 3 4<br>1 2 3<br>1 2<br>1<br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+           int i,j;<br>
+   clrscr();<br>
+
+   for(i=5;i>=1;i--)<br>
+   {<br>
+     for(j=1;j<=i;j++)<br>
+     {<br>
+     printf(" %d ",j);<br>
+     }<br>
+     printf("\n");<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        
+        <br>1 2 3 4 5<br>1 2 3 4<br>1 2 3<br>1 2<br>1<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp8">27.(Pyramid-H) : Write a C Program to displays Pyramid.<br><br>1 2 3 4 5<br>2 3 4 5<br>3 4 5<br>4 5<br>5<br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j;<br>
+   clrscr();<br>
+
+   for(i=1;i<=5;i++)<br>
+   {<br>
+     for(j=i;j<=5;j++)<br>
+     {<br>
+     printf(" %d ",j);<br>
+     }<br>
+     printf("\n");<br>
+   }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br>1 2 3 4 5<br>2 3 4 5<br>3 4 5<br>4 5<br>5<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp9">28.(Pyramid-I) : Write a C Program to displays Pyramid.<br><br><span style="margin-left:25px;">1</span><br><span style="margin-left:13px;">1  2</span><br>1  2  3<br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j,k;<br>
+  clrscr();<br>
+
+  for(i=1;i<=3;i++)<br>
+  {<br>
+    for(k=1;k<=3-i;k++)<br>
+    {<br>
+      printf(" ");<br>
+    }<br>
+    for(j=1;j<=i;j++)<br>
+    {<br>
+      printf(" %d",j);<br>
+    }<br>
+    printf("\n");<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br><span style="margin-left:12px;">1</span><br><span style="margin-left:6px;">1  2</span><br>1  2  3<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp10">29.(Pyramid-J) : Write a C Program to displays Pyramid.<br><br>1 2 3<br><span style="margin-left: 14px;">1 2</span><br><span style="margin-left: 27px;">1</span><br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j,k;<br>
+  clrscr();<br>
+
+  for(i=3;i>=1;i--)<br>
+  {<br>
+    for(k=3;k>=1+i;k--)<br>
+    {<br>
+      printf(" ");<br>
+    }<br>
+    for(j=1;j<=i;j++)<br>
+    {<br>
+      printf(" %d",j);<br>
+    }<br>
+    printf("\n");<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+      <br>1 2 3<br><span style="margin-left: 6px;">1 2</span><br><span style="margin-left: 12px;">1</span><br><br>
+        
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp11">30.(Pyramid-K) : Write a C Program to displays Pyramid.<br><br><span style="margin-left:54px;">1</span><br><span style="margin-left: 28px;">2  1  2</span><br>3  2  1  2  3<br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j,k,m;<br>
+  clrscr();<br>
+
+  for(i=1;i<=3;i++)<br>
+  {<br>
+   for(k=1;k<=3-i;k++)<br>
+   {<br>
+    printf(" ");<br>
+   }<br>
+   for(j=i;j>=1;j--)<br>
+   {<br>
+     printf("%d",j);<br>
+   }<br>
+   for(m=2;m<=i;m++)<br>
+   {<br>
+     printf("%d",m);<br>
+   }<br>
+   printf("\n");<br>
+  }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br><span style="margin-left:26px;">1</span><br><span style="margin-left: 13px;">2  1  2</span><br>3  2  1  2  3<br><br>
+          </div>
+        </p>
+        <hr>
+        <h3 id="dp12">31.(Pyramid-L) : Write a C Program to displays Pyramid.<br><br><span style="margin-left:54px;">1</span><br><span style="margin-left: 28px;">1  2  1</span><br>1  2  3  2  1<br><span style="margin-left: 28px;">
+1  2  1<br><span style="margin-left: 54px;">1</span><br></h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int i,j,k;<br>
+          clrscr();<br>
+          for(i=1;j<=3;i++)<br>
+          {<br>
+            for(k=1;k<=3-i;k++)<br>
+            {<br>
+             printf(" ");<br>
+            }<br>
+            for(i=2;i>=1;i--)<br>
+            {<br>
+             for(k=1;k<=3-i;k++)<br>
+             {<br>
+              printf("");<br>
+             }<br>
+             for(j=1;j<=i;j++)<br>
+             {<br>
+              printf("%d",j);<br>
+             }<br>
+             if(i>=2)<br>
+             {<br>
+              for(j=i-1;j>=1;j--)
+              {<br>
+                 printf("%d",j)<br>
+              }<br>
+             }<br>
+             printf("\n");<br>
+          }<br>
+          getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        <br><span style="margin-left:26px;">1</span><br><span style="margin-left: 13px;">1  2  1</span><br>1  2  3  2  1<br><span style="margin-left: 13px;">
+1  2  1<br><span style="margin-left: 26px;">1</span><br><br>
+          </div>
+        </p>
+        <hr>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid bg-dark gray footer">
+	&copy; Copyright 2021. All Rights Reserved by Self Programming.
+</div>
+</body>
+ </html>
