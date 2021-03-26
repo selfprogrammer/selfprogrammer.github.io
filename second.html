@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Sequential Programs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style type="text/css">
+    .text{
+    font-family: "Audiowide", sans-serif;
+    margin-right: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px silver;
+    }	
+    .div1{
+    height: 100%;
+    width: 94%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.19);
+    background-color: white;
+    }	
+    	.div2{
+    		width: 100%;
+    		height: 300px;
+    		background-color: lightgray;
+    		border-radius: 15px;
+    		padding: 10px 10px 10px 10px;
+    		overflow: scroll;
+    	}
+    	.div2::-webkit-scrollbar{
+            display: none;
+    	}
+    	.div3{
+    		width: 100%;
+    		height: 700px;
+    		background-color: lightgray;
+    		border-radius: 15px;
+    		padding: 10px 10px 10px 10px;
+    		overflow: scroll;
+    	}
+    	.div3::-webkit-scrollbar{
+            display: none;
+        }
+        .div4{
+    		width: 100%;
+    		height: 200px;
+    		background-color: whitesmoke;
+    		border-radius: 15px;
+    		padding: 10px 10px 10px 10px;
+    		overflow: scroll;
+    	}
+    	.div4::-webkit-scrollbar{
+            display: none;
+        }
+        a{
+        	text-decoration: none;
+        	color: black;
+        	font-family: arial black;
+        }
+        a:hover{
+        	text-decoration: none;
+        	background-color: lime;
+        }
+        .collapse a{
+         text-decoration: none;
+         background-color: unset;
+    }
+        .footer{
+    height: 60px;
+    width: 100%;
+    padding-top: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.3);
+    }
+.bg1{
+    background-image: url("https://images.assetsdelivery.com/compings_v2/yulicon/yulicon1801/yulicon180100022.jpg");
+    }
+.td1{
+    width: 20%;
+    }
+.td2{
+    width: 70%;
+    }
+li{
+    font-size: 15px;
+    font-family:Arial Black;
+    }
+h1{
+    color: maroon;
+    }
+h3{
+  	font-family:Arial Black;
+    }
+.gmail{
+    font-size: 15px;
+    text-shadow: 3px 3px 3px silver;
+    color: navy;
+    font-family: arial black;
+    }
+    </style>
+ </head>
+ <body class="bg1">
+ <nav class="navbar navbar-expand-lg navbar-light bg-success" style=" box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.3);">
+ 	<font class="text">Self Programmer</font>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+     <li class="nav-item active">
+        <a class="nav-link" href="array.html">Array Programs <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Programs
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="second.html">Sequential Programs</a>
+          <a class="dropdown-item" href="condition.html">Decision Making Programs</a>
+          <a class="dropdown-item" href="looping.html">Looping Programs</a>
+          <a class="dropdown-item" href="udf.html">UDF Programs</a>
+      </li>
+      </ul>
+    <p class="form-inline my-2 my-lg-0 gmail">✉️:- selfprogrammer2021@gmail.com</p>
+      
+  </div>
+</nav>
+<div class="container div1">
+<center>
+<h1><b><i>Sequential Programs</i></b></h1>
+</center>
+<br>
+ <div class="row">
+ 	<div class="col">
+ 	<ul type="disc">
+ 		<li>C is a Sequential language or procedural language because the execution flow is always in a sequence.</li>
+ 		<li>In general, given the same input data, a sequential program will always execute the same sequence of instructions and it will always produce the same results.</li>
+ 	</ul>
+ 	</div>
+ </div>
+ <hr>
+<center>
+<h1><b><i>Examples</i></b></h1>
+</center>
+<br><br>
+<div class="container">
+	<div class="row">
+		<div class="col">
+			<div class="div2">
+				<h3>Definations</h3>
+				<p>Note :-Scroll and Click on Definition Which you want to learn</p>
+				<ol type="1">
+					<li><a href="#d1">Write a Program to Print “Hello World”.</a></li>
+					<li><a href="#d2">Write a Program that takes 2 Values from user and Perform All Arithmetic
+Operation.</a></li>
+					<li><a href="#d3">Write a program that takes 3 values for Principle Amount, Rate of Interest
+and No. of Years and find out Simple Interest.</a></li>
+					<li><a href="#d4">Write a program that input value from user and find out Area of Circle.</a></li>
+					<li><a href="#d5">Write a program that input two values from user and find out Area of
+Rectangle.</a></li>
+					<li><a href="#d6">Write a program that input 3 values from user and find out its Average.</a></li>
+					<li><a href="#d7">Write a program to Calculate the Square and Cube of a number.</a></li>
+					<li><a href="#d8">Write a program Interchange the value of two numbers using third
+variable.</a></li>
+					<li><a href="#d9">Write a program Interchange the value of two numbers without using third
+variable.</a></li>
+					<li><a href="#d10">Write a program to convert temperature Fahrenheit to Celsius.
+</a></li>
+					<li><a href="#d11">Write a program that input quantity, price, discount and display final
+amount.</a></li>
+					<li><a href="#d12">Write a program that input selling amount and calculate 25% commission
+on selling.</a></li>
+					<li><a href="#d13">Write a program to input height and breadth and find out area of triangle.</a></li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<br>
+	<center>
+	<h1><i><b>Programms</b></i></h1>
+    </center>
+	<div class="row">
+		<div class="col">
+			<div class="div3">
+				<h3 id="d1">1.Write a Program to Print “Hello World”.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					clrscr();<br>
+					printf("\nHello World");<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				<br>
+			
+				Hello World
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d2">2.Write a Program that takes 2 Values from user and Perform All Arithmetic Operation.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					int x,y,a,b,c;<br>
+  float d;<br>
+  clrscr();<br>
+  printf("\nEnter Value Of x:");<br>
+  scanf("%d",&x);<br><br>
+
+  printf("\nEnter Value Of y:");<br>
+  scanf("%d",&y);<br><br>
+
+  a=x+y;<br>
+  b=x-y;<br>
+  c=x*y;<br>
+  d=x/y;<br><br>
+
+  printf("\nAnswer Of Addition:%d",a);<br>
+  printf("\nAnswer Of Substr  :%d",b);<br>
+  printf("\nAnswer Of Multip  :%d",c);<br>
+  printf("\nAnswer OF Divistion:%f",d);
+<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				<br>
+				Enter Value Of x:10<br><br>
+				Enter Value Of y:2<br><br>
+				Answer Of Addition:12<br><br>
+				Answer Of Substr  :8<br><br>
+				Answer Of Multip  :20<br><br>
+				Answer OF Divistion:5
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d3">3.Write a program that takes 3 values for Principle Amount, Rate of Interest and No. of Years and find out Simple Interest.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+
+					 float P,R,N,SI;<br>
+   clrscr();<br>
+   printf("\nEnter value of P:");<br>
+   scanf("%f",&P);<br><br>
+   printf("\nEnter value of R:");<br>
+   scanf("%f",&R);<br><br>
+   printf("\nEnter value of N:");<br>
+   scanf("%f",&N);<br><br>
+   SI=P*R*N/100.0;<br><br>
+   printf("Simple Intrest=%.2f",SI);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				<br>
+				Enter value of P:1000<br><br>
+				Enter value of R:20<br><br>
+				Enter value of N:4<br><br>
+				Simple Intrest=800.00
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d4">4.Write a program that input value from user and find out Area of Circle.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					float A,r,Pi=3.14;<br>
+  clrscr();<br>
+  printf("\nEnter Value Of r:");<br>
+  scanf("%f",&r);<br><br>
+  A=Pi*r*r;<br><br>
+  printf("\nThe Area Of Circle=%f",A);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				<br>
+				Enter Value Of r:12<br><br>
+				The Area Of Circle=452.16
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d5">5.Write a program that input two values from user and find out Area of Rectangle.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					int l,b,A;<br>
+  clrscr();<br>
+  printf("\nEnter Value Of l:");<br>
+  scanf("%d",&l);<br><br>
+  printf("\nEnter Value Of b:");<br>
+  scanf("%d",&b);<br><br>
+  A=l*b;<br><Br>
+  printf("\nArea Of Rectangle:%d",A);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				<br>
+				Enter Value Of l:3<br><br>
+				Enter Value Of b:4<br><br>
+				Area Of Rectangle:12
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d6">6.Write a program that input 3 values from user and find out its Average.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					float x,y,z,a;<br>
+  clrscr();<br>
+  printf("\nEnter Value Of x:");<br>
+  scanf("%f",&x);<br><br>
+  printf("\nEnter Value Of y:");<br>
+  scanf("%f",&y);<br><br>
+  printf("\nEnter Value Of z:");<br>
+  scanf("%f",&z);<br><br>
+  a=(x+y+z)/3.0;<br><br>
+  printf("\nAverage Value:%f",a);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				<br>
+
+				Enter Value Of x:4<br><br>
+				Enter Value Of y:2<br><br>
+				Enter Value Of z:3<br><Br>
+				Average Value:3
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d7">7.Write a program to Calculate the Square and Cube of a number.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					int a,c,s;<br>
+					clrscr();<br>
+					printf("\nEnter any Number:");<br>
+					scanf("%d",&a);<br><br>
+					s=a*a;<br><br>
+					printf("\nSquare of a Number:%d",s);<br><br>
+					c=s*a;<br><br>
+					printf("\nCube of a Number:%d",c);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				
+				<br>
+				Enter any Number:2<br><br>
+				Square of a Number:4<br><br>
+				Cube of a Number:8<br><br>
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d8">8.Write a program Interchange the value of two numbers using third variable.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					 int x,y,z;<br>
+  clrscr();<br>
+  printf("\nEnter Value Of x:");<br>
+  scanf("\n%d",&x);<br><br>
+  printf("\nEnter Value Of y:");<br>
+  scanf("\n%d",&y);<br><br>
+  z=x;<br>
+  x=y;<br>
+  y=z;<br><br>
+  printf("\nChanged Value Of x:%d",x);<br>
+  printf("\nChanged Value Of y:%d",y);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				
+				<br>
+				Enter Value Of x:2<br><br>
+				Enter Value Of y:4<br><br>
+				Changed Value Of x:4<br>
+				Changed Value Of y:2<br>
+			    </div>
+				</p>
+				<hr>
+                <h3 id="d9">9.Write a program Interchange the value of two numbers without using third variable.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					 int a,b;<br>
+   clrscr();<br>
+   printf("\nEnter Value Of a:");<br>
+   scanf("\n%d",&a);<br><Br>
+   printf("\nEnter Value Of b:");<br>
+   scanf("\n%d",&b);<br><br>
+   a=a+b;<br>
+   b=a-b;<br>
+   a=a-b;<br><br>
+   printf("\nChanged Value Of a:%d",a);<br>
+   printf("\nChanged Value Of b:%d",b);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				
+				<br>
+				Enter Value Of a:2<br><br>
+				Enter Value Of b:4<br><br>
+				Changed Value Of a:4<br>
+				Changed Value Of b:2<br>
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d10">10.Write a program to convert temperature Fahrenheit to Celsius.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					 float F,C;<br>
+  clrscr();<br>
+  printf("\nEnter Value in Fahrenheit:");<br>
+  scanf("\n%f",&F);<br><br>
+  C=5.0/9*(F-32);<br><br>
+  printf("\nCelsius Value:%.2f",C);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				
+				<br>
+				Enter Value in Fahrenheit:40<br><br>
+				Celsius Value:4.44<br><br>
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d11">11.Write a program that input quantity, price, discount and display final amount.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					float Q,P,D,disc,cost,TP;<br>
+  clrscr();<br>
+  printf("\nEnter Quantity:");<br>
+  scanf("\n%f",&Q);<br><br>
+  printf("\nEnter Price:");<br>
+  scanf("\n%f",&P);<br><br>
+  printf("\nEnter Discount:");<br>
+  scanf("\n%f",&D);<br><br>
+  TP=Q*P;<br>
+  disc=(TP*D)/100.0;<br>
+  cost=TP-disc;<br><br>
+  printf("\nFinel Amount:%f",cost);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				
+				<br>
+				Enter Quantity:2<br><br>
+				Enter Price:100<br><br>
+				Enter Discount:50<br><br>
+				Finel Amount:100<br><br>
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d12">12.Write a program that input selling amount and calculate 25% commission on selling.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					float SP,C=25,TC;<br>
+   clrscr();<br>
+   printf("\nEnter Selling Price:");<br>
+   scanf("%f",&SP);<br><br>
+   TC=SP*C/100.0;<br><br>
+   printf("\nTotal Commission:%.2f",TC);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+			
+				<br>
+				Enter Selling Price:100<br><br>
+				Total Commission:25.00<br><br>
+			    </div>
+				</p>
+				<hr>
+				<h3 id="d13">13.Write a program to input height and breadth and find out area of triangle.</h3>
+				<br><br>
+				<li>C program:</li>
+				<br>
+				<p>
+				#include&lt;stdio.h&gt;<br>
+				#include&lt;conio.h&gt;<br><br>
+				void main()<br>
+				{<br>
+					float h,b,A;<br>
+  clrscr();<br>
+  printf("\nEnter Base:");<br>
+  scanf("\%f",&b);<br><br>
+  printf("\nEnter Height:");<br>
+  scanf("%f",&h);<br><br>
+  A=1.0/2*b*h;<br><br>
+  printf("\nArea Of Triangle:%.2f",A);<br>
+					getch();<br>
+				}<br><br><br>
+				<div class="div4">
+				<li>Output:</li>
+				
+				<br>
+				Enter Base:25.5<br><br>
+				Enter Height:40.5<br><br>
+				Area Of Triangle:516.38<br><br>
+			    </div>
+				</p>				
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<div class="container-fluid bg-dark gray footer">
+	&copy; Copyright 2021. All Rights Reserved by Self Programming.
+</div>
+</body>
+ </html>
