@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  	<title>Array Programs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <style type="text/css">
+
+        .text{
+    font-family: "Audiowide", sans-serif;
+    margin-right: 20px;
+    font-size: 30px;
+    text-shadow: 2px 2px silver;
+    } 
+    .div1{
+    height: 100%;
+    width: 94%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.19);
+    background-color: white;
+    } 
+      .div2{
+        width: 100%;
+        height: 300px;
+        background-color: lightgray;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        overflow: scroll;
+      }
+      .div2::-webkit-scrollbar{
+            display: none;
+      }
+      .div3{
+        width: 100%;
+        height: 700px;
+        background-color: lightgray;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        overflow: scroll;
+      }
+      .div3::-webkit-scrollbar{
+            display: none;
+        }
+        .div4{
+        width: 100%;
+        height: 200px;
+        background-color: whitesmoke;
+        border-radius: 15px;
+        padding: 10px 10px 10px 10px;
+        overflow: scroll;
+      }
+      .div4::-webkit-scrollbar{
+            display: none;
+        }
+        a{
+          text-decoration: none;
+          color: black;
+          font-family: arial black;
+        }
+        a:hover{
+          text-decoration: none;
+          background-color: lime;
+        }
+        .collapse a{
+         text-decoration: none;
+         background-color: unset;
+    }
+        .footer{
+    height: 60px;
+    width: 100%;
+    padding-top: 12px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.3);
+    }
+.bg1{
+    background-image: url("https://images.assetsdelivery.com/compings_v2/yulicon/yulicon1801/yulicon180100022.jpg");
+    }
+.td1{
+    width: 20%;
+    }
+.td2{
+    width: 70%;
+    }
+li{
+    font-size: 15px;
+    font-family:Arial Black;
+    }
+h1{
+    color: maroon;
+    }
+h3{
+    font-family:Arial Black;
+    }
+.gmail{
+    font-size: 15px;
+    text-shadow: 3px 3px 3px silver;
+    color: navy;
+    font-family: arial black;
+    }
+    </style>
+ </head>
+ <body class="bg1">
+ <nav class="navbar navbar-expand-lg navbar-light bg-success" style=" box-shadow: 0 10px 16px rgba(0, 0, 255, 0.3), 0 6px 20px 0 rgba(0, 0, 255, 0.3);">
+ 	<font class="text">Self Programmer</font>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="array.html">Array Programs <span class="sr-only">(current)</span></a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Programs
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="sequential.html">Sequential Programs</a>
+          <a class="dropdown-item" href="condition.html">Decision Making Programs</a>
+          <a class="dropdown-item" href="looping.html">Looping Programs</a>
+          <a class="dropdown-item" href="udf.html">UDF Programs</a>
+      </li>
+      </ul>
+    <p class="form-inline my-2 my-lg-0 gmail">✉️:- selfprogrammer2021@gmail.com</p>
+  </div>
+</nav>
+<div class="container div1">
+<center>
+<h1><b><i>Array Programs</i></b></h1>
+<hr>
+</center>
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="div2">
+        <h3>Definations</h3>
+        <p>Note :-Scroll and Click on Definition Which you want to learn</p>
+        <ol type="1">
+          <li><a href="#d1">Write a program to read and display n numbers using one dimensional array.</a></li>
+          <li><a href="#d2">Write a program to enter N elements and find total and average of them.</a></li>
+          <li><a href="#d3">Write a program to enter N elements and find Minimum and Maximum Value from the array.</a></li>
+          <li><a href="#d4">Write a program to enter N elements and find how many are positive,negative,even and odd number.
+          </a></li>
+
+        </ol>
+      </div>
+    </div>
+  </div>
+  <br>
+    <center>
+  <h1><i><b>Programms</b></i></h1>
+    </center>
+  <div class="row">
+    <div class="col-12">
+      <div class="div3">
+        <h3 id="d1">1.Write a program to read and display n numbers using one dimensional array.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+         int a[100],i,n;<br>
+   clrscr();<br>
+   printf("\nHow many values you want to enter:");<br>
+   scanf("%d",&n);<br>
+   for(i=0;i < n;i++)<br>
+   {<br>
+      printf("\nEnter Value of element:");<br>
+      scanf("%d",&a[i]);<br>
+   }<br>
+   for(i=0;i < n;i++)<br>
+   {<br>
+      printf("\nValue of element %d:",a[i]);<br>
+   }<br>
+   getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+         How many values you want to enter:3<br><br>
+         Enter Value of element:2<br>
+         Enter Value of element:1<br>
+         Enter Value of element:3<br><br>
+         Value of element:2<br>
+         Value of element:1<br>
+         Value of element:3<br><br>
+        <br>
+        </div>
+      </p>
+      <hr>
+      <h3 id="d2">2.Write a program to enter N elements and find total and average of them.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+         int a[100],i,n;<br>
+   float avg,total;<br>
+   clrscr();<br>
+   printf("\nHow many numbers you want to print:");<br>
+   scanf("%d",&n);<br>
+   for(i=0;i < n;i++)<br>
+   {<br>
+      printf("\nEnter Value of element: ");<br>
+      scanf("%d",&a[i]);<br>
+   }<br>
+    for(i=0;i < n;i++)<br>
+   {<br>
+	total=total+a[i];<br>
+   }<br>
+   printf("\nTotal=%.2f",total);<br>
+   avg=total/n;<br>
+   printf("\nAverage=%.2f",avg);<br> 
+   getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+         How many numbers you want to print:3<br><br>
+         Enter Value of element:2<br>
+         Enter Value of element:1<br>
+         Enter Value of element:3<br><br>
+         Total=6<br>
+         Average=2<br>
+        <br>
+        </div>
+      </p>
+      <hr>
+      <h3 id="d3">3.Write a program to enter N elements and find Minimum and Maximum Value from the array.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+         int a[100],i,n,mini,max;<br>
+   clrscr();<br>
+   printf("\nEnter how many number you want to print:");<br>
+   scanf("%d",&n);<br>
+   for(i=0;i < n;i++)<br>
+   {<br>
+      printf("\nEnter Value of element :");<br>
+      scanf("%d",&a[i]);<br>
+   }<br>
+   mini=max=a[0];<br>
+    for(i=1;i < n;i++)<br>
+   {<br>
+	if(mini > a[i])<br>
+	   mini=a[i];<br>
+	if(max < a[i])<br>
+	   max=a[i];<br>
+   }<br>
+   printf("\nMinimum Number:%d",mini);<br>
+   printf("\nMaximum Number:%d",max);<br>
+   getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+         How many numbers you want to print:3<br><br>
+         Enter Value of element:2<br>
+         Enter Value of element:1<br>
+         Enter Value of element:3<br><br>
+         Minimum Number:1<br>
+         Maximum Number:3<br>
+        <br>
+        </div>
+      </p>
+      <hr>
+      <h3 id="d4">4.Write a program to enter N elements and find how many are positive,negative,even and odd number.</h3>
+        <br><br>
+        <li>C program:</li>
+        <br>
+        <p>
+        #include&lt;stdio.h&gt;<br>
+        #include&lt;conio.h&gt;<br><br>
+        void main()<br>
+        {<br>
+          int a[100],i,n,positive=0,negative=0,even=0,odd=0;<br>
+   clrscr();<br>
+   printf("\nHow many numbers you want to print:");<br>
+   scanf("%d",&n);<br>
+   for(i=0;i < n;i++)<br>
+   {<br>
+      printf("\nEnter Value of element :");<br>
+      scanf("%d",&a[i]);<br>
+   }<br>
+    for(i=0;i < n;i++)<br>
+   {<br>
+	if(a[i] < 0)<br>
+	   negative++;<br>
+	else<br>
+	   positive++;<br>
+	if(a[i]%2==0)<br>
+	   even++;<br>
+	else<br>
+	   odd++;<br>
+   }<br>
+   printf("\nPositive :%d",positive);<br>
+   printf("\nNegative :%d",negative);<br>
+   printf("\nEven :%d",even);<br>
+   printf("\nOdd :%d",odd);<br>
+   getch();<br>
+        }<br><br><br>
+        <div class="div4">
+        <li>Output:</li>
+        How many numbers you want to print:3<br><br>
+         Enter Value of element:-2<br>
+         Enter Value of element:1<br>
+         Enter Value of element:3<br><br>
+         Positive :2<br>
+         Negative :1<br>
+         Even :1<br>
+         Odd :2<br>
+        <br>
+        </div>
+      </p>
+      <hr>
+      
+</div>        
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid bg-dark gray footer">
+	&copy; Copyright 2021. All Rights Reserved by Self Programming.
+</div>
+</body>
+ </html>
